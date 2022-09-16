@@ -1,0 +1,227 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* education
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-16 07:11+0000\n"
+"PO-Revision-Date: 2022-09-16 07:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: education
+#: model:res.groups,name:education.education_admin_group
+msgid "Administrator"
+msgstr ""
+
+#. module: education
+#: model:ir.ui.menu,name:education.education_class_menu
+msgid "Class"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_class__class_code
+msgid "Class Code"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_class__create_uid
+#: model:ir.model.fields,field_description:education.field_education_school__create_uid
+#: model:ir.model.fields,field_description:education.field_education_student__create_uid
+#: model:ir.model.fields,field_description:education.field_education_teacher__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_class__create_date
+#: model:ir.model.fields,field_description:education.field_education_school__create_date
+#: model:ir.model.fields,field_description:education.field_education_student__create_date
+#: model:ir.model.fields,field_description:education.field_education_teacher__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_student__dob
+#: model:ir.model.fields,field_description:education.field_education_teacher__dob
+msgid "Date of birth"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_school__description
+#: model:ir.model.fields,field_description:education.field_education_student__description
+#: model:ir.model.fields,field_description:education.field_education_teacher__description
+msgid "Description"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_class__description
+msgid "Description of class"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_class__display_name
+#: model:ir.model.fields,field_description:education.field_education_school__display_name
+#: model:ir.model.fields,field_description:education.field_education_student__display_name
+#: model:ir.model.fields,field_description:education.field_education_teacher__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: education
+#: model:ir.module.category,name:education.module_education_category
+#: model:ir.module.category,name:education.module_education_category_user
+msgid "Education"
+msgstr ""
+
+#. module: education
+#: model:ir.ui.menu,name:education.education_menu_root
+msgid "Education Manager"
+msgstr ""
+
+#. module: education
+#: model:ir.actions.act_window,name:education.education_class_action
+msgid "Education class action"
+msgstr ""
+
+#. module: education
+#: model:ir.model,name:education.model_education_school
+msgid "Education school"
+msgstr ""
+
+#. module: education
+#: model:ir.actions.act_window,name:education.education_school_action
+msgid "Education school action"
+msgstr ""
+
+#. module: education
+#: model:ir.model,name:education.model_education_student
+msgid "Education student"
+msgstr ""
+
+#. module: education
+#: model:ir.actions.act_window,name:education.education_student_action
+msgid "Education student action"
+msgstr ""
+
+#. module: education
+#: model:ir.model,name:education.model_education_teacher
+msgid "Education teacher"
+msgstr ""
+
+#. module: education
+#: model:ir.actions.act_window,name:education.education_teacher_action
+msgid "Education teacher action"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_student__email
+#: model:ir.model.fields,field_description:education.field_education_teacher__email
+msgid "Email contact"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields.selection,name:education.selection__education_student__gender__female
+#: model:ir.model.fields.selection,name:education.selection__education_teacher__gender__female
+msgid "Female"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_student__gender
+#: model:ir.model.fields,field_description:education.field_education_teacher__gender
+msgid "Gender"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_class__id
+#: model:ir.model.fields,field_description:education.field_education_school__id
+#: model:ir.model.fields,field_description:education.field_education_student__id
+#: model:ir.model.fields,field_description:education.field_education_teacher__id
+msgid "ID"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_class____last_update
+#: model:ir.model.fields,field_description:education.field_education_school____last_update
+#: model:ir.model.fields,field_description:education.field_education_student____last_update
+#: model:ir.model.fields,field_description:education.field_education_teacher____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_class__write_uid
+#: model:ir.model.fields,field_description:education.field_education_school__write_uid
+#: model:ir.model.fields,field_description:education.field_education_student__write_uid
+#: model:ir.model.fields,field_description:education.field_education_teacher__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_class__write_date
+#: model:ir.model.fields,field_description:education.field_education_school__write_date
+#: model:ir.model.fields,field_description:education.field_education_student__write_date
+#: model:ir.model.fields,field_description:education.field_education_teacher__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_class__name
+#: model:ir.model.fields,field_description:education.field_education_school__name
+#: model:ir.model.fields,field_description:education.field_education_student__name
+#: model:ir.model.fields,field_description:education.field_education_teacher__name
+msgid "Name"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_student__phone
+#: model:ir.model.fields,field_description:education.field_education_teacher__phone
+msgid "Phone contact"
+msgstr ""
+
+#. module: education
+#: model:ir.ui.menu,name:education.education_school_menu
+msgid "School"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_school__school_code
+msgid "School Code"
+msgstr ""
+
+#. module: education
+#: model:ir.ui.menu,name:education.education_student_menu
+#: model:res.groups,name:education.education_student_group
+msgid "Student"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_student__student_code
+msgid "Student Code"
+msgstr ""
+
+#. module: education
+#: model:ir.ui.menu,name:education.education_teacher_menu
+#: model:res.groups,name:education.education_teacher_group
+msgid "Teacher"
+msgstr ""
+
+#. module: education
+#: model:ir.model,name:education.model_education_class
+msgid "education class"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields.selection,name:education.selection__education_student__gender__male
+#: model:ir.model.fields.selection,name:education.selection__education_teacher__gender__male
+msgid "male"
+msgstr ""
+
+#. module: education
+#: model:ir.model.fields.selection,name:education.selection__education_student__gender__other
+#: model:ir.model.fields.selection,name:education.selection__education_teacher__gender__other
+msgid "other"
+msgstr ""

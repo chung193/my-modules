@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<record id="education_class_view_tree" model="ir.ui.view">
+	   <field name="name">All class</field>
+	   <field name="model">education.class</field>
+	   <field name="arch" type="xml">
+	      <tree>
+	         <field name="name" />
+	      </tree>
+	   </field>
+	</record>
+	
+	<record id="education_student_view_form" model="ir.ui.view">
+	   <field name="name">All class</field>
+	   <field name="model">education.class</field>
+	   <field name="arch" type="xml">
+	      <form>
+	         <group>
+	            <field name="name" />
+	         </group>
+	      </form>
+	   </field>
+	</record>
+
+	<record id="education_class_action"
+		model="ir.actions.act_window">
+		<field name="name">Education class action</field>
+		<field name="res_model">education.class</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	
+	<menuitem id="education_menu_root" 
+		name="Education Manager" ></menuitem>
+	
+	<menuitem id="education_class_menu"
+		action="education_class_action" parent="education_menu_root"
+		name="Class"/>
+	
+</odoo>

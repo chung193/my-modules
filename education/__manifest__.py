@@ -1,7 +1,7 @@
 {
     'name': "education",
-    'name_vi_VN': "",
-
+    'name_vi_VN': "Quản lý giáo dục",
+    'sequence': 1,
     'summary': """
 Short (1 phrase/line) summary of the module's purpose, used as
 subtitle on modules listing or apps.openerp.com""",
@@ -80,9 +80,13 @@ Tính năng chính
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        'security/education_security.xml',
+        'security/ir.model.access.csv',
+        
+        'views/education_class_view.xml',
+        'views/education_school_view.xml',
+        'views/education_student_view.xml',
+        'views/education_teacher_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
@@ -92,7 +96,7 @@ Tính năng chính
         # 'static/description/main_screenshot.png'
         ],
     'installable': True,
-    'application': False,
+    'application': True,
     'auto_install': False,
     'price': 99.9,
     'currency': 'EUR',

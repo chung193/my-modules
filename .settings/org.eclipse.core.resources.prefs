@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//education/models/__init__.py=utf-8
+encoding//education/models/education_class_model.py=utf-8
+encoding//education/models/education_school_model.py=utf-8
+encoding//education/models/education_student_model.py=utf-8
+encoding//education/models/education_teacher_model.py=utf-8
+encoding//education/models/models.py=utf-8
+encoding//viin_education/__manifest__.py=utf-8
