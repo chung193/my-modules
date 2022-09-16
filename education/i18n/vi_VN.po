@@ -18,17 +18,17 @@ msgstr ""
 #. module: education
 #: model:res.groups,name:education.education_admin_group
 msgid "Administrator"
-msgstr ""
+msgstr "Quản trị viên"
 
 #. module: education
 #: model:ir.ui.menu,name:education.education_class_menu
 msgid "Class"
-msgstr ""
+msgstr "Lớp học"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_class__class_code
 msgid "Class Code"
-msgstr ""
+msgstr "Mã lớp"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_class__create_uid
@@ -36,7 +36,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:education.field_education_student__create_uid
 #: model:ir.model.fields,field_description:education.field_education_teacher__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Tạo bởi"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_class__create_date
@@ -44,25 +44,25 @@ msgstr ""
 #: model:ir.model.fields,field_description:education.field_education_student__create_date
 #: model:ir.model.fields,field_description:education.field_education_teacher__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Tạo vào"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_student__dob
 #: model:ir.model.fields,field_description:education.field_education_teacher__dob
 msgid "Date of birth"
-msgstr ""
+msgstr "Ngày sinh"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_school__description
 #: model:ir.model.fields,field_description:education.field_education_student__description
 #: model:ir.model.fields,field_description:education.field_education_teacher__description
 msgid "Description"
-msgstr ""
+msgstr "Mô tả"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_class__description
 msgid "Description of class"
-msgstr ""
+msgstr "Mô tả lớp học"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_class__display_name
@@ -70,13 +70,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:education.field_education_student__display_name
 #: model:ir.model.fields,field_description:education.field_education_teacher__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Tên hiển thị"
 
 #. module: education
 #: model:ir.module.category,name:education.module_education_category
 #: model:ir.module.category,name:education.module_education_category_user
 msgid "Education"
-msgstr ""
+msgstr "Giáo dục"
 
 #. module: education
 #: model:ir.ui.menu,name:education.education_menu_root
@@ -91,38 +91,38 @@ msgstr ""
 #. module: education
 #: model:ir.model,name:education.model_education_school
 msgid "Education school"
-msgstr ""
+msgstr "Trường học"
 
 #. module: education
 #: model:ir.actions.act_window,name:education.education_school_action
 msgid "Education school action"
-msgstr ""
+msgstr "Quản lý trường học"
 
 #. module: education
 #: model:ir.model,name:education.model_education_student
 msgid "Education student"
-msgstr ""
+msgstr "Học sinh"
 
 #. module: education
 #: model:ir.actions.act_window,name:education.education_student_action
 msgid "Education student action"
-msgstr ""
+msgstr "Quản lý học sinh"
 
 #. module: education
 #: model:ir.model,name:education.model_education_teacher
 msgid "Education teacher"
-msgstr ""
+msgstr "Giáo viên"
 
 #. module: education
 #: model:ir.actions.act_window,name:education.education_teacher_action
 msgid "Education teacher action"
-msgstr ""
+msgstr "Giáo viên"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_student__email
 #: model:ir.model.fields,field_description:education.field_education_teacher__email
 msgid "Email contact"
-msgstr ""
+msgstr "Email liên hệ"
 
 #. module: education
 #: model:ir.model.fields.selection,name:education.selection__education_student__gender__female
@@ -134,7 +134,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:education.field_education_student__gender
 #: model:ir.model.fields,field_description:education.field_education_teacher__gender
 msgid "Gender"
-msgstr ""
+msgstr "Giới tính"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_class__id
@@ -142,7 +142,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:education.field_education_student__id
 #: model:ir.model.fields,field_description:education.field_education_teacher__id
 msgid "ID"
-msgstr ""
+msgstr "Mã"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_class____last_update
@@ -150,7 +150,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:education.field_education_student____last_update
 #: model:ir.model.fields,field_description:education.field_education_teacher____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Sửa đổi lần cuối"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_class__write_uid
@@ -158,7 +158,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:education.field_education_student__write_uid
 #: model:ir.model.fields,field_description:education.field_education_teacher__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Cập nhật lần cuối bởi"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_class__write_date
@@ -166,7 +166,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:education.field_education_student__write_date
 #: model:ir.model.fields,field_description:education.field_education_teacher__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Cập nhật lần cuối vào"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_class__name
@@ -174,7 +174,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:education.field_education_student__name
 #: model:ir.model.fields,field_description:education.field_education_teacher__name
 msgid "Name"
-msgstr ""
+msgstr "Tên"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_student__phone
@@ -185,23 +185,23 @@ msgstr ""
 #. module: education
 #: model:ir.ui.menu,name:education.education_school_menu
 msgid "School"
-msgstr ""
+msgstr "Trường học"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_school__school_code
 msgid "School Code"
-msgstr ""
+msgstr "Mã trường"
 
 #. module: education
 #: model:ir.ui.menu,name:education.education_student_menu
 #: model:res.groups,name:education.education_student_group
 msgid "Student"
-msgstr ""
+msgstr "Học sinh"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_student__student_code
 msgid "Student Code"
-msgstr "Ma hoc sinh"
+msgstr "Mã học sinh"
 
 #. module: education
 #: model:ir.model,name:education.model_education_class
@@ -212,10 +212,10 @@ msgstr ""
 #: model:ir.model.fields.selection,name:education.selection__education_student__gender__male
 #: model:ir.model.fields.selection,name:education.selection__education_teacher__gender__male
 msgid "male"
-msgstr ""
+msgstr "Nam"
 
 #. module: education
 #: model:ir.model.fields.selection,name:education.selection__education_student__gender__other
 #: model:ir.model.fields.selection,name:education.selection__education_teacher__gender__other
 msgid "other"
-msgstr ""
+msgstr "Khác"

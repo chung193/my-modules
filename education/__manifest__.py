@@ -82,7 +82,8 @@ Tính năng chính
     'data': [
         'security/education_security.xml',
         'security/ir.model.access.csv',
-        
+        'data/data.xml',
+        # 'demo/demo.xml',
         'views/education_class_view.xml',
         'views/education_school_view.xml',
         'views/education_student_view.xml',

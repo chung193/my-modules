@@ -9,7 +9,7 @@ class EducationTeacher(models.Model):
 
     name = fields.Char()
     dob = fields.Date(string="Date of birth")
-    gender = fields.Selection(string="Gender", selection=[("Male", "male"), ("female", "Female"), ("Other", "other")])
+    gender = fields.Selection(string="Gender", selection=[("Male", "male"), ("Female", "female"), ("Other", "other")])
     email = fields.Char("Email contact")
     phone = fields.Char("Phone contact")
     description = fields.Text()

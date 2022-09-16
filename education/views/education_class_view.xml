@@ -7,6 +7,7 @@
 	   <field name="arch" type="xml">
 	      <tree>
 	         <field name="name" />
+	         <field name="class_code" />
 	      </tree>
 	   </field>
 	</record>
@@ -18,6 +19,7 @@
 	      <form>
 	         <group>
 	            <field name="name" />
+	            <field name="class_code" />
 	         </group>
 	      </form>
 	   </field>

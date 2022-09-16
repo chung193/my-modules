@@ -1,33 +1,33 @@
 <odoo>
-	<data>
+	<data noupdate="1">
 		<!-- school record -->
 		<record id="school1" model="education.school">
-			<field name="name">Đại học Hàng Hải Việt Nam</field>
-			<field name="school_code">SCHOOL002</field>
+			<field name="name">FPT</field>
+			<field name="school_code">SCHOOL001</field>
 		</record>
 		
 		<!-- class record -->
 		<record id="class1" model="education.class">
-			<field name="name">Công nghệ thông tin 2</field>
-			<field name="class_code">CNT52DH2</field>
+			<field name="name">Công nghệ thông tin 1</field>
+			<field name="class_code">CNT52DH1</field>
 		</record>
 		
 		<!-- teacher record -->
 		<record id="teacher1" model="education.teacher">
-			<field name="name">Kim Young Un</field>
-			<field name="gender">male</field>
+			<field name="name">Marco Reus</field>
+			<field name="gender">Male</field>
 			<field name="dob">1989-01-01</field>
-			<field name="email">unhandsome@gmail.com</field>
+			<field name="email">reus@gmail.com</field>
 			<field name="phone">0123456789</field>
 		</record>
 		
 		<!-- student record -->
 		<record id="student1" model="education.student">
-			<field name="name">Donal Trump</field>
-			<field name="student_code">std002</field>
-			<field name="gender">male</field>
+			<field name="name">Ronaldo</field>
+			<field name="student_code">std001</field>
+			<field name="gender">Male</field>
 			<field name="dob">1989-01-01</field>
-			<field name="email">trump@gmail.com</field>
+			<field name="email">ronaldo@gmail.com</field>
 			<field name="phone">0123456789</field>
 		</record>
 	</data>
