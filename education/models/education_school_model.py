@@ -10,4 +10,5 @@ class EducationSchool(models.Model):
     name = fields.Char()
     school_code = fields.Char()
     description = fields.Text()
-
+    class_ids = fields.One2many('education.class', 'school_id', string="classes")
+    
