@@ -9,6 +9,7 @@
 	         <field name="name" />
 	         <field name="class_code" />
 	         <field name="school_name"/>
+	         <field name="group_name"/>
 	      </tree>
 	   </field>
 	</record>
@@ -21,6 +22,8 @@
 	         <group>
 	            <field name="name" />
 	            <field name="class_code" />
+	            <field name="group_id"/>
+	            <field name="school_id"/>
 	         </group>
 	      </form>
 	   </field>

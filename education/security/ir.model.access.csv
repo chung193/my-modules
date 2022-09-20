@@ -3,13 +3,16 @@ student_access_education_student_readonly,education.education.student student,mo
 student_access_education_teacher_readonly,education.education.student teacher,model_education_teacher,education_student_group,1,0,0,0
 student_access_education_class_readonly,education.education.student class,model_education_class,education_student_group,1,0,0,0
 student_access_education_school_readonly,education.education.student school,model_education_school,education_student_group,1,0,0,0
+student_access_education_school_level_readonly,education.education.student school level,model_education_school_level,education_student_group,0,0,0,0
 ,,,,,,,
 teacher_access_education_student_readonly,education.education.teacher student,model_education_student,education_teacher_group,1,0,0,0
 teacher_access_education_teacher_readonly,education.education.teacher teacher,model_education_teacher,education_teacher_group,1,0,0,0
 teacher_access_education_class_readonly,education.education.teacher class,model_education_class,education_teacher_group,1,0,0,0
 teacher_access_education_school_readonly,education.education.teacher school,model_education_school,education_teacher_group,1,0,0,0
+teacher_access_education_school_level_readonly,education.education.teacher school level,model_education_school_level,education_teacher_group,0,0,0,0
 ,,,,,,,
 admin_access_education_student,education.education.admin student,model_education_student,education_admin_group,1,1,1,1
 admin_access_education_teacher,education.education.admin teacher,model_education_teacher,education_admin_group,1,1,1,1
 admin_access_education_class,education.education.admin class,model_education_class,education_admin_group,1,1,1,1
 admin_access_education_school,education.education.admin school,model_education_school,education_admin_group,1,1,1,1
+admin_access_education_school_level,education.education.admin school level,model_education_school_level,education_admin_group,1,1,1,1

@@ -1,5 +1,23 @@
 <odoo>
 	<data noupdate="1">
+	
+		<!-- school level record -->
+		<record id="schoollevel1" model="education.school.level">
+			<field name="name">Cấp 1</field>
+		</record>
+		
+		<record id="schoollevel2" model="education.school.level">
+			<field name="name">Mẫu giáo</field>
+		</record>
+		
+		<record id="schoollevel3" model="education.school.level">
+			<field name="name">Cấp 2</field>
+		</record>
+		
+		<record id="schoollevel4" model="education.school.level">
+			<field name="name">Cấp 3</field>
+		</record>
+		
 		<!-- school record -->
 		<record id="school1" model="education.school">
 			<field name="name">FPT</field>

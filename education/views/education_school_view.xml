@@ -8,6 +8,8 @@
 				<tree>
 					<field name="name"/>
 					<field name="school_code"/>
+					<field name="level_name"/>
+					<field name="created"/>
 				</tree>
 			</field>
 		</record>
@@ -17,8 +19,14 @@
 			<field name="model">education.school</field>
 			<field name="arch" type="xml">
 				<form>
-					<field name="name"/>
-					<field name="school_code"/>
+					<sheet>
+						<group>
+							<field name="name"/>
+							<field name="school_code"/>
+							<field name="level_id"/>
+							<field name="created" />
+						</group>
+					</sheet>
 				</form>
 			</field>
 		</record>
