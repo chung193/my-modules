@@ -10,6 +10,7 @@
 					<field name="school_code"/>
 					<field name="level_name"/>
 					<field name="created"/>
+					<field name="company_ids"/>
 				</tree>
 			</field>
 		</record>
@@ -25,6 +26,7 @@
 							<field name="school_code"/>
 							<field name="level_id"/>
 							<field name="created" />
+							<field name="company_ids"/>
 						</group>
 					</sheet>
 				</form>

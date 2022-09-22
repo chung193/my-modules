@@ -10,11 +10,14 @@ class EducationSchool(models.Model):
     name = fields.Char()
     school_code = fields.Char()
     description = fields.Text()
-    class_ids = fields.One2many('education.class','school_id', string="classes")
-    level_id = fields.Many2one("education.school.level", string="Level of school")
     created = fields.Integer("Year this school create")
     
+    class_ids = fields.One2many('education.class','school_id', string="classes")
+    level_id = fields.Many2one("education.school.level", string="Level of school")
+    student_ids = fields.One2many("education.student", 'school_id' )
+    
     level_name = fields.Char(related="level_id.name")
+    company_ids = fields.Many2many("education.company", string="company support")
     
     @api.constrains('created')
     def _check_year_create(self):

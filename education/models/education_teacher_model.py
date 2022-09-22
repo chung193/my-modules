@@ -8,12 +8,12 @@ class EducationTeacher(models.Model):
 
     name = fields.Char()
     dob = fields.Date(string="Date of birth")
-    gender = fields.Selection(string="Gender", default="male", selection=[("Male", "male"), ("Female", "female"), ("Other", "other")])
+    gender = fields.Selection(string="Gender", selection=[("male","Male"), ("female","Female"), ("other","Other")])
     email = fields.Char("Email contact")
     phone = fields.Char("Phone contact")
     description = fields.Html()
     attached_file = fields.Binary("attached file")
-    class_ids = fields.Many2many('education.class', string="classes")
+    class_ids = fields.One2many('education.class','teacher_id', string="classes")
 
     age = fields.Integer(string="Age", compute="_compute_age", inverse="_inverse_age", store=False, readonly=False)
     
@@ -21,7 +21,10 @@ class EducationTeacher(models.Model):
     def _compute_age(self):
         current_year = fields.Date.today().year
         for r in self:
-            r.age = current_year - r.dob.year    
+            if r.dob:
+                r.age = current_year - r.dob.year    
+            else:
+                r.age = 0
        
     def _inverse_age(self):
         current_year = fields.Date.today().year

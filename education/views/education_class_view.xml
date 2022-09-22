@@ -10,6 +10,8 @@
 	         <field name="class_code" />
 	         <field name="school_name"/>
 	         <field name="group_name"/>
+	         <field name="teacher_id"/>
+	         <field name="language"/>
 	      </tree>
 	   </field>
 	</record>
@@ -24,6 +26,7 @@
 	            <field name="class_code" />
 	            <field name="group_id"/>
 	            <field name="school_id"/>
+	            <field name="teacher_id"/>
 	         </group>
 	      </form>
 	   </field>

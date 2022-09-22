@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
 	<data>
+	    <!-- Load css File -->
+	    <template id="view_css_asset" name="view_custom_css_assets" inherit_id="web.assets_backend">
+	      <xpath expr="." position="inside">
+	        <link rel="stylesheet" href="/education/static/src/css/custom_view.css"/>
+	      </xpath>
+	    </template>
+	  </data>
+  
+	<data>
+	
 		<record id="education_student_view_tree" model="ir.ui.view">
 			<field name="name">Education student Tree View</field>
 			<field name="model">education.student</field>
@@ -14,8 +25,9 @@
 					<field name="phone" />
 					<field name="email" />
 					<field name="description" />
-					<field name="attached_file" />
+					<field name="attached_file" widget="image" class="oe_avatar avt"  />
 					<field name="class_name" />
+					<field name="school_name" />
 				</tree>
 			</field>
 		</record>
@@ -35,7 +47,8 @@
 							<field name="phone" />
 							<field name="email" />
 							<field name="description" />
-							<field name="attached_file" />
+							<field name="attached_file" widget="image" class="oe_avatar avt"  />
+							<field name="school_id" />
 							<field name="class_id" />	
 						</group>
 					</sheet>
