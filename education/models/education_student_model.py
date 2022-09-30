@@ -25,7 +25,8 @@ class EducationStudent(models.Model):
     phone = fields.Char("Phone contact")
     description = fields.Html()
     attached_file = fields.Binary("attached file", default=get_default_image)
-    age = fields.Integer(string="Age", compute="_compute_age", inverse="_inverse_age")
+    age = fields.Integer(string="Age", compute="_compute_age", inverse="_inverse_age", search="_search_age")
+    dropout_reason = fields.Text(string="Dropout Reason")
     
     def _default_stage_id(self):
         try:
@@ -87,7 +88,7 @@ class EducationStudent(models.Model):
          new_year = fields.Date.today().year - value
          new_value = fields.date(new_year, 1, 1)
          # age > value => date_of_birth < new_value
-         operator_map = {'>': '<', '>=': '<=', '<': '>', '<=': '>='}
+         operator_map = {'>': '<', '>=': '<=', '<': '>', '<=': '>=', '=':'='}
          new_operator = operator_map.get(operator, operator)
          return [('dob', new_operator, new_value)]
     
@@ -105,6 +106,20 @@ class EducationStudent(models.Model):
        
        records = super(EducationStudent, self).create(vals)
        return records
+   
+    
+    def write(self, vals):
+        if 'firstname' in vals and 'lastname' in vals:
+            vals['name'] = vals['firstname'] + " " + vals['lastname']
+            
+        elif 'firstname' in vals:
+            vals['name'] = vals['firstname'] + " " + self.lastname
+            
+        elif 'lastname' in vals:
+            vals['name'] = self.firstname + vals['lastname']
+        
+        return super(EducationStudent, self).write(vals)
+   
    
     @api.model
     def is_allowed_state(self, current_state, new_state):
@@ -152,4 +167,5 @@ class EducationStudent(models.Model):
             students = self.env['education.student'].search([])
             return students.filtered_domain([('state','==','new')])
        
-    
+    def action_dropout(self):
+        return self.env.ref('education.education_student_dropout_wizard_action').read()[0]

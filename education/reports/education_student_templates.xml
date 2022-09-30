@@ -15,10 +15,10 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr t-foreach="doc.student_ids" t-as="student">
-                                    <td><t t-esc="student.name"/></td>
-                                    <td><t t-esc="student.student_code"/></td>
-                                    <td><t t-esc="student.dob"/></td>
+                                <tr t-foreach="doc" t-as="student">
+                                    <td><t t-esc="doc.name"/></td>
+                                    <td><t t-esc="doc.student_code"/></td>
+                                    <td><t t-esc="doc.dob"/></td>
                                 </tr>
                             </tbody>
                         </table>

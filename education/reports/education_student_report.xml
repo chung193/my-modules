@@ -2,11 +2,11 @@
 <odoo>
     <record id="report_book_rent" model="ir.actions.report">
         <field name="name">Học sinh</field>
-        <field name="model">res.partner</field>
+        <field name="model">education.student</field>
         <field name="report_type">qweb-pdf</field>
         <field name="report_name">education.education_student_template</field>
         <field name="report_file">education.education_student_template</field>
-        <field name="binding_model_id" ref="model_res_partner"/>
+        <field name="binding_model_id" ref="model_education_student"/>
         <field name="binding_type">report</field>
     </record>
 </odoo>
