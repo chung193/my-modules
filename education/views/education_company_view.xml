@@ -40,7 +40,7 @@
 	
 		<menuitem id="education_company_menu"
 			action="education_company_action" parent="education_menu_root"
-			name="company"/>
+			name="Company"/>
 			
 	</data>
 </odoo>

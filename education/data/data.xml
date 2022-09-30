@@ -2,35 +2,24 @@
 	<data noupdate="1">
 	
 		<!-- school level record -->
-		<record id="schoollevel1" model="education.school.level">
-			<field name="name">Cấp 1</field>
+		<!-- <record id="schoollevel1" model="education.school.level">
+			<field name="name">Đại học</field>
 		</record>
 		
-		<record id="schoollevel2" model="education.school.level">
-			<field name="name">Mẫu giáo</field>
-		</record>
-		
-		<record id="schoollevel3" model="education.school.level">
-			<field name="name">Cấp 2</field>
-		</record>
-		
-		<record id="schoollevel4" model="education.school.level">
-			<field name="name">Cấp 3</field>
-		</record>
-		
-		<!-- school record -->
+
+		school record
 		<record id="school1" model="education.school">
 			<field name="name">FPT</field>
 			<field name="school_code">SCHOOL001</field>
 		</record>
 		
-		<!-- class record -->
+		class record
 		<record id="class1" model="education.class">
 			<field name="name">Công nghệ thông tin 1</field>
 			<field name="class_code">CNT52DH1</field>
 		</record>
 		
-		<!-- teacher record -->
+		teacher record
 		<record id="teacher1" model="education.teacher">
 			<field name="name">Marco Reus</field>
 			<field name="gender">Male</field>
@@ -39,7 +28,7 @@
 			<field name="phone">0123456789</field>
 		</record>
 		
-		<!-- student record -->
+		student record
 		<record id="student1" model="education.student">
 			<field name="name">Ronaldo</field>
 			<field name="student_code">std001</field>
@@ -47,6 +36,25 @@
 			<field name="dob">1989-01-01</field>
 			<field name="email">ronaldo@gmail.com</field>
 			<field name="phone">0123456789</field>
-		</record>
+		</record> -->
+		
+		<!-- student stage -->
+		<record id="stage_new" model="education.student.stage">
+	        <field name="name">New</field>
+	        <field name="student_state">new</field>
+	    </record>
+	    <record id="stage_studying" model="education.student.stage">
+	        <field name="name">Studying</field>
+	        <field name="student_state">studying</field>
+	    </record>
+	    <record id="stage_off" model="education.student.stage">
+	        <field name="name">Off</field>
+	        <field name="student_state">off</field>
+	    </record>
+	    <record id="stage_expelled" model="education.student.stage">
+	        <field name="name">Expelled</field>
+	        <field name="student_state">off</field>
+	    </record>
+
 	</data>
 </odoo>

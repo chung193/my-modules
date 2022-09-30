@@ -31,7 +31,7 @@
 
 	<record id="education_class_group_action"
 		model="ir.actions.act_window">
-		<field name="name">Education class group ]action</field>
+		<field name="name">Education class group action</field>
 		<field name="res_model">education.class.group</field>
 		<field name="view_mode">tree,form</field>
 	</record>

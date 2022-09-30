@@ -20,11 +20,8 @@
 					<field name="name"></field>
 					<field name="student_code" />
 					<field name="dob" />
-					<field name="age" />
-					<field name="gender" />
 					<field name="phone" />
 					<field name="email" />
-					<field name="description" />
 					<field name="attached_file" widget="image" class="oe_avatar avt"  />
 					<field name="class_name" />
 					<field name="school_name" />
@@ -38,21 +35,55 @@
 			<field name="arch" type="xml">
 				<form>
 					<sheet>
-						<group>
-							<field name="name"></field>
-							<field name="student_code" />
-							<field name="gender" />
-							<field name="dob" />
-							<field name="age" />
-							<field name="phone" />
-							<field name="email" />
-							<field name="description" />
-							<field name="attached_file" widget="image" class="oe_avatar avt"  />
-							<field name="school_id" />
-							<field name="class_id" />	
-						</group>
+						<header>
+							<field name="stage_id" widget="statusbar" options="{'clickable': 1}"/>
+			    		</header>
+			    		<field name="attached_file" widget="image" class="oe_avatar"  />
+			    		
+			    		
+			    		<notebook>
+							<page string="Personal Information">
+								<group>
+									<field name="firstname"/>
+									<field name="lastname"/>
+									<field name="name"/>
+									<field name="student_code" />
+									<field name="gender" />
+									<field name="dob" />
+									<field name="age" />
+									<field name="phone" />
+									<field name="email" />
+									<field name="description" />
+									<field name="attached_file" widget="image" class="oe_avatar avt"  />
+									<field name="school_id" />
+									<field name="class_id" />	
+								</group>
+							</page>
+						
+							<page string="Functions">
+								<group>
+									<button name="show_all_public_and_private_schools_accessright_admin" type="object" string="show_ all_ public_ and_ private_ schools_ accessright_ admin" class="btn-primary"></button>								
+									<button name="search_gender_male" type="object" string="search gender male"></button>
+									<button name="search_gender_female" type="object" string="search gender female"></button>
+									 
+								</group>
+							</page>
+						
+						</notebook>
 					</sheet>
 				</form>
+			</field>
+		</record>
+		
+		<record id="education_student_view_search" model="ir.ui.view">
+			<field name="name">education.student.search</field>
+			<field name="model">education.student</field>
+			<field name="arch" type="xml">
+				<search string="student search">
+					<field name="name" string="student name or student code or class id" filter_domain="['|', '|', ('name', 'ilike', self), ('student_code', 'ilike', self), ('class_id', 'ilike', self)]"></field>
+					<field name="class_id"></field>
+					<field name="school_id"></field>
+				</search>
 			</field>
 		</record>
 

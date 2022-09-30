@@ -11,6 +11,7 @@
 					<field name="level_name"/>
 					<field name="created"/>
 					<field name="company_ids"/>
+					<field name="attached_file" widget="image" class="oe_avatar avt"  />
 				</tree>
 			</field>
 		</record>
@@ -27,6 +28,7 @@
 							<field name="level_id"/>
 							<field name="created" />
 							<field name="company_ids"/>
+							<field name="attached_file" widget="image" class="oe_avatar avt"  />
 						</group>
 					</sheet>
 				</form>

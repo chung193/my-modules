@@ -9,7 +9,7 @@ class EducationClass(models.Model):
     description = fields.Text(string="Description of class", readonly=True)
     school_id = fields.Many2one('education.school', string="school")
     
-    student_ids = fields.One2many('education.student', 'class_id', string="students")
+    student_ids = fields.One2many('education.student', 'class_id', string="students", domain="[('school_id', '=', school_id)]")
     teacher_id = fields.Many2one('education.teacher', string="teachers")
     group_id = fields.Many2one("education.class.group", domain="[('school_id', '=', school_id)]")
 

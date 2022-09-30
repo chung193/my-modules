@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<record id="education_course_advance_view_tree" model="ir.ui.view">
+	   <field name="name">All course advance</field>
+	   <field name="model">education.course.advance</field>
+	   <field name="arch" type="xml">
+	      <tree>
+	      	 <field name="name" />
+	         <field name="bonus_price" />
+	         <field name="total_price" />
+	      </tree>
+	   </field>
+	</record>
+	
+	
+	
+	<record id="education_course_advance_view_form" model="ir.ui.view">
+	   <field name="name">All course advance</field>
+	   <field name="model">education.course.advance</field>
+	   <field name="arch" type="xml">
+	      <form>
+		      <sheet>
+			      <group>
+			      		<field name="name" />
+			      		<field name="bonus_price" />
+			            <field name="extend_course_id" />
+			            <field name="total_price" />
+			      </group>
+		      </sheet>    
+	      </form>
+	   </field>
+	</record>
+
+	<record id="education_course_advance_action"
+		model="ir.actions.act_window">
+		<field name="name">Education course advance action</field>
+		<field name="res_model">education.course.advance</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	
+	<menuitem id="education_course_advance_menu"
+		action="education_course_advance_action" parent="education_menu_root"
+		name="Course advance"/>
+	
+</odoo>
