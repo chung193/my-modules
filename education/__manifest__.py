@@ -95,8 +95,10 @@ Tính năng chính
         'views/education_course_view.xml',
         'views/education_course_advance_view.xml',
         
-        # 'reports/education_student_report.xml',
-        # 'reports/education_student_templates.xml',
+        'wizards/education_student_dropout_wizard.xml',
+        
+        'reports/education_student_report.xml',
+        'reports/education_student_templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

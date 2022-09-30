@@ -57,6 +57,7 @@
 									<field name="attached_file" widget="image" class="oe_avatar avt"  />
 									<field name="school_id" />
 									<field name="class_id" />	
+									<field name="stage_id" />	
 								</group>
 							</page>
 						
